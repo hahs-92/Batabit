@@ -440,14 +440,33 @@ main {
     color: #757575;
 }
 
+/* contenedor de las tarjetas */
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/*Decorar scrollbar*/
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
 /* tarjeta */
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0; /*el 30px separa las tarjetas*/
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -541,3 +560,4 @@ p {
     background-image: url('./assets/icons/orange-right-arrow.svg');
     vertical-align: text-bottom;
 }
+
