@@ -453,3 +453,46 @@ main {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+
+.recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15.5px;
+    background-color: var(--bitcoin-orange);
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: var(--just-white);
+    padding: 6px;/* para alinear el parrafo*/
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price {
+    position: relative;
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+
+.plan-card--price .sup {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
